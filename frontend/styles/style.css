@@ -1,0 +1,170 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f3f6;  /* Light gray background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #6a11cb, #2575fc);  /* Gradient background */
+}
+
+/* Container Styling */
+.container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Header Styling */
+h2 {
+  color: #2575fc;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+  font-weight: bold;
+}
+
+/* Input Fields Styling */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+/* Password Strength Meter Styling */
+.strength-meter {
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.strength-meter.weak {
+  color: #e74c3c;  /* Red for weak */
+}
+
+.strength-meter.medium {
+  color: #f39c12;  /* Orange for medium */
+}
+
+.strength-meter.strong {
+  color: #27ae60;  /* Green for strong */
+}
+
+/* Terms and Conditions Styling */
+.terms {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.terms input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.terms a {
+  color: #2575fc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.terms a:hover {
+  color: #6a11cb;
+  text-decoration: underline;
+}
+
+/* Button Styling */
+button {
+  background-color: #2575fc;
+  color: #fff;
+  padding: 15px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #6a11cb;
+  transform: translateY(-3px);
+}
+
+/* Error and Success Messages */
+.error-message {
+  color: #e74c3c; /* Red for error */
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.success-message {
+  color: #27ae60; /* Green for success */
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+}

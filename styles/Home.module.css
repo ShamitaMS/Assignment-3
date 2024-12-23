@@ -1,0 +1,10 @@
+.container {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.inputField {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
